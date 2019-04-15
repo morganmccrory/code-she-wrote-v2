@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TopNavbar from './TopNavbar';
-import logo from '../code-she-wrote-2.jpg';
+import TopNavbar from './topnav/TopNavbar';
+import Footer from './footer/Footer';
 import './App.css';
 
 class App extends Component {
@@ -8,9 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <TopNavbar />
-        <header className="logo-header">
-          <img src={logo} className="logo" alt="code-she-wrote" />
-        </header>
+        <Footer />
       </div>
     );
   }

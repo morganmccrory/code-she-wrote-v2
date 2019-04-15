@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Nav from 'react-bootstrap/lib/Nav';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import NavItem from 'react-bootstrap/lib/NavItem';
-import './TopNavbar.scss';
+import logo from '../code-she-wrote.jpg';
+import './TopNavbar.css';
 
 class TopNavbar extends Component {
   render() {
@@ -12,6 +13,7 @@ class TopNavbar extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
+          <img src={logo} className="logo" alt="code-she-wrote" />
           <Nav>
             <NavItem eventKey={1} href="#">
               Link One

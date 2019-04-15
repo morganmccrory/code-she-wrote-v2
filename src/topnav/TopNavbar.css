@@ -1,6 +1,7 @@
 .navbar.navbar-default.navbar-static-top {
 	background-color: #FFFFFF;
 	margin-bottom: 0;
+	height: 80px;
 }
 
 .navbar-header {
@@ -8,4 +9,14 @@
 		float: left;
 		margin-left: 15px;
 	}
+}
+
+.navbar-collapse {
+	position: relative;
+	margin-top: 1%;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 12%;
 }
