@@ -1,0 +1,9 @@
+@import "_variables";
+
+@mixin breakpoint($media) {
+    @if $media == xs          { @media only screen and (min-width: 0) and (max-width: $media-sm - 1) { @content; } }
+    @else if $media == sm     { @media only screen and (min-width: 0) and (max-width: $media-md - 1) { @content; } }
+    @else if $media == md     { @media only screen and (min-width: 0) and (max-width: $media-lg - 1) { @content; } }
+    @else if $media == lg     { @media only screen and (min-width: 0) and (max-width: $media-xl - 1) { @content; } }
+    @else if $media == xl     { @media only screen and (min-width: 0) { @content; } }
+}

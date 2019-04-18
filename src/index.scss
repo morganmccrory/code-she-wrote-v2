@@ -1,3 +1,5 @@
+@import "assets/css/_variables";
+
 body {
   margin: 0;
   padding: 0;
@@ -11,4 +13,17 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* Bootstrap overrides */
+.btn {
+  margin-bottom: 5px;
+	background-color: $dark-teal !important;
+	color: $white !important;
+	font-size: x-large !important;
+  font-weight: 200 !important;
 }

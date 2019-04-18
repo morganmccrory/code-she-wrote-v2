@@ -1,0 +1,24 @@
+// Navbar overrides
+.navbar {
+	background-color: white;
+	border: 0;
+}
+
+.navbar-default .navbar-nav {
+	float: none;
+	flex-direction: row !important;
+
+	li a {
+		color: black;
+	}
+}
+
+.navbar-collapse {
+	position: relative;
+	margin-top: 1%;
+	color: black;
+	font-size: 1.2em;
+	letter-spacing: .1em;
+	font-weight: 600;
+	text-transform: uppercase;
+}

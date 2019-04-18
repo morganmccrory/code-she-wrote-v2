@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "^3.4.0",
     "jquery": "^3.0.0",
+    "node-sass": "^4.11.0",
     "node-sass-import": "^2.0.1",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",

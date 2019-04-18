@@ -1,0 +1,91 @@
+@import "../../assets/css/_mixins";
+
+.newsletter-container {
+	padding-top: 25px;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@include breakpoint(md) {
+		max-width: 600px;
+	}
+
+	@include breakpoint(sm) {
+		max-width: 350px;
+	}
+
+	.newsletter-signup {
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+		display: -webkit-box;
+    	display: -ms-flexbox;
+		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		align-items: flex-start;
+		-ms-flex-align: center;
+		justify-content: center;
+		-webkit-box-pack: center;
+   		-ms-flex-pack: center;
+		font-size: x-large;
+		color: white;
+
+		@include breakpoint(md) {
+			justify-content: space-between;
+			-webkit-box-pack: justify;
+    		-ms-flex-pack: justify;
+		}
+
+		label {
+			margin: 0 .5em 0 0;
+			font-weight: 300 !important;
+			letter-spacing: 3px;
+			flex: 0 0 auto;
+			-webkit-box-flex: 0;
+    		-ms-flex: 0 0 auto;
+    		align-self: center;
+
+			@include breakpoint(md) {
+				flex: 1 1 100%;
+				text-align: left;
+			}
+		}
+
+		.revue-form-field {
+			margin: 0 .5em 0 0;
+			min-width: 350px;
+			font-size: x-large !important;
+			font-weight: 200 !important;
+			flex: 0 0 45%;
+			-webkit-box-flex: 0;
+    		-ms-flex: 0 0 44.3%;
+
+			&::placeholder {
+				color: lightgray;
+			}
+
+			@include breakpoint(md) {
+				flex: 1 1 33%;
+			}
+
+			@include breakpoint(sm) {
+				margin-top: .5em;
+				flex: 1 1 100%;
+			}
+		}
+
+		#member_submit {
+			flex: 0 0 auto;
+			-webkit-box-flex: 0;
+    		-ms-flex: 0 0 auto;
+
+			@include breakpoint(md) {
+				flex: 0 1 30%;
+			}
+
+			@include breakpoint(sm) {
+				margin-top: .5em;
+				flex: 1 1 100%;
+			}
+		}
+	}
+}

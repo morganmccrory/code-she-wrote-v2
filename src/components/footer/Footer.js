@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import NewsletterSignup from './NewsletterSignup';
-import './Footer.css';
+import NewsletterSignup from '../newsletter-signup/NewsletterSignup';
+import './Footer.scss';
 
 class Footer extends Component {
   render() {
     return (
-      <div class="footer">
+      <div className="footer">
         <NewsletterSignup />
       </div>
     );
